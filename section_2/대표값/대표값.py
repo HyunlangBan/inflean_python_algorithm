@@ -12,6 +12,8 @@ else:
 print(mean, idx+1)
 
 ######### SOLUTION ##########
+# 최소값을 직접 구하는 방식을 선택
+
 n = int(input())
 a = list(map(int, input().split()))
 ave = round(sum(a)/n)
@@ -27,3 +29,4 @@ for idx, x in enumerate(a):
         if x > score:
             score = x
             res = idx + 1
+print(ave, res)

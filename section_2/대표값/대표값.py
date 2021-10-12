@@ -16,7 +16,8 @@ print(mean, idx+1)
 
 n = int(input())
 a = list(map(int, input().split()))
-ave = round(sum(a)/n)
+# ave = round(sum(a)/n)   ###### 문제 오류 -> round half up 방식이 아니라 round_half_even(.5일때 짝수쪽으로 근사) 방식임 
+ave = int((sum(a)/n) + 0.5)
 min=2147000000
 
 for idx, x in enumerate(a):

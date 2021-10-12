@@ -13,4 +13,15 @@ for i in range(2, n+1):
 
 print(count)
 
-## TIMEOVER (제한시간 1초)
+## FAIL -> TIMEOVER (제한시간 1초)
+
+########## SOLUTION ###########
+# 에라토스테네스 체
+n = int(input())
+ch = [0] * (n+1)
+cnt = 0
+for i in range(2, n+1):
+    if ch[i] == 0:   # value가 0이면 소수
+        cnt += 1
+        for j in range(i, n+1, i):   ### Step (소수의 배수들 check)
+            ch[j] = 1

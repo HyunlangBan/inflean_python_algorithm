@@ -2,7 +2,7 @@ n = int(input())
 
 def calculate(array):
     max_point = -1
-    for i in range(n):
+    for i in range(7):
         if array[i] == 3:
             return 10000+(i*1000)
         elif array[i] == 2:

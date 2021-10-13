@@ -10,3 +10,6 @@ for i in range(n):
         array[i] = point
 
 print(sum(array))
+
+######## SOLUTION #######
+## 리스트로 안하고 sum=0으로 선언후 바로 더해줘도 된다.

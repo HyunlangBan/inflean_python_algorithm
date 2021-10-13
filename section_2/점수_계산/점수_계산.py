@@ -12,4 +12,4 @@ for i in range(n):
 print(sum(array))
 
 ######## SOLUTION #######
-## 리스트로 안하고 sum=0으로 선언후 바로 더해줘도 된다.
+## 리스트로 안하고 sum=0으로 선언후 바로 point를 더해줘도 된다.

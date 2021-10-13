@@ -30,7 +30,7 @@ def reverse(x):
     res=0
     while x>0:
         t=x%10
-        res=res*10+t. # res에 10을 곱해주어야 이전에 결과값이 한자리씩 올라감
+        res=res*10+t  # res에 10을 곱해주어야 이전에 결과값이 한자리씩 올라감
         x=x//10
     return res
 

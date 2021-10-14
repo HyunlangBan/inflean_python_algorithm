@@ -15,7 +15,7 @@ for a in array[1:]:
           
 ########## SOLUTION ###########
 
-a = list(range(21) ## 간단하다
+a = list(range(21)) ## 간단하다
 for _ in range(10):
      s, e = map(int, input().split())
      for i in range((e-s+1)//2):

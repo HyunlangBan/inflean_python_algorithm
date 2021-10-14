@@ -3,7 +3,7 @@ n = int(input())
 for _ in range(n):
     word = input()
     word = word.lower()
-    if word == word[::-1]:
+    if word == word[::-1]:   ## reverse 하지 않고도 직접 구현하는 방법을 아는 것이 더 중요
         print('YES')
     else:
         print('NO')

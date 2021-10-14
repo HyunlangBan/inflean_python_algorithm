@@ -11,8 +11,7 @@ for _ in range(10):
     array = front+new_mid+end
     
 for a in array[1:]:
-    print(a, end=' '
-
+    print(a, end=' ')
           
 ########## SOLUTION ###########
 

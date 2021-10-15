@@ -13,3 +13,28 @@ for i in range(n):
     if sum == m:
         cnt += 1
 print(cnt)
+
+######### SOLUTION ###########
+## lt, rt로 범위의 합을 비교하고 범위를 시킴 -> 더 간단!!
+
+lt=0
+rt=1
+tot=a[0]
+cnt=0
+
+while True:
+    if tot<m:
+        if rt<n:
+            tot+=a[rt]
+            rt+=1
+        else:
+            break
+    elif tot==m:
+        cnt+=1
+        tot-=a[lt]
+        lt+=1
+    else:
+        tot-=a[lt]
+        lt+=1
+        
+print(cnt)

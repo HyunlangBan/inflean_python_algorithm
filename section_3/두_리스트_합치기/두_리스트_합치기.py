@@ -26,3 +26,24 @@ while True:
         small = b.pop(0)
     new_list.append(small)
 print(new_list)
+
+########## SOLUTION ###########
+## sort()는 NlogN의 시간 복잡도를 가짐
+## 이미 오름차순으로 정렬된 것을 정렬하는 것은 N번만에 가능
+## 난 요소를 제거해가면서 했고 답안은 인덱스를 더해나가면서 풀었다. 
+
+p1=p2=0
+c=[]
+while p1<n and p2<m:
+    if a[p1]<=b[p2]:
+        c.append(append[p1])
+        p1+=1
+    else:
+        c.append(b[p2])
+        p2+=1
+if p1<n:
+    c=c+a[p1:]
+if p2<m:
+    c=c+b[p2:]
+
+print(c)

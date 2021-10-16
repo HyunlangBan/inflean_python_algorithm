@@ -25,3 +25,30 @@ print(result)
 
 ### 하.. 행, 열이 너무 헷갈린다.
 ### 테스트 5개중 3개 정답
+
+
+########### SOLUTION ############
+## 배열을 어떻게 회전할지 궁금했는데 생각하지 못했던 pop, insert를 활용했다.
+
+for i in range(m):
+    h, t, k = map(int, input().split())
+    if t == 0:
+        for _ in range(k):
+            a[h-1].append(a[h-1].pop(0))
+    else:
+        for _ in range(k):
+            a[h-1].insert(0, a[h-1].pop())
+                
+res = 0
+s = 0
+e = n-1
+for i in range(n):
+    for j in range(s, e+1):
+        res += a[i][j]
+    if i < n//2:
+        s += 1
+        e -= 1
+    else:
+        s -= 1
+        e += 1
+print(res)

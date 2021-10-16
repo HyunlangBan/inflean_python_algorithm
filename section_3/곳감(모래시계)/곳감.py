@@ -24,3 +24,4 @@ for col in range(n//2+1):
 print(result)
 
 ### 하.. 행, 열이 너무 헷갈린다.
+### 테스트 5개중 3개 정답

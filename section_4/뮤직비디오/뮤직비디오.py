@@ -20,10 +20,23 @@ def count(mid):
 
 while lt<=rt:
   mid = (lt+rt)//2
-  if count(mid) <= 3:
+  if count(mid) <= 3: ## m을 넣어야한다..
     res = mid
-    rt -= 1
-  if count(mid) > 3:
-    lt += 1
+    rt -= 1  ## rt = mid - 1 이다.
+  if count(mid) > 3: ## m을 넣어야한다..
+    lt += 1 ## lt = mid + 1 이다.
 
 print(res)
+
+########### SOLUTION ############
+
+def count(capacity):
+  cnt=1
+  sum=0
+  for x in music:
+    if sum+x > capacity:
+      cnt += 1
+      sum=x
+    elese:
+      sum+=x
+  return cnt

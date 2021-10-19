@@ -30,6 +30,8 @@ print(res)
 
 ########### SOLUTION ############
 
+maxx = max(music)
+
 def count(capacity):
   cnt=1
   sum=0
@@ -40,3 +42,15 @@ def count(capacity):
     elese:
       sum+=x
   return cnt
+
+while lt<=rt:
+  mid = (lt+rt)//2
+  if mid>=maxx and count(mid)<=m:
+    res=mid
+    rt=mid-1
+  else:
+    lt=mid+1
+print(res)
+    
+
+## 반례=> 9개에 9개의 노래를 담으려면 mid의 조건(mid > max_music)이 추가되어야 한다.

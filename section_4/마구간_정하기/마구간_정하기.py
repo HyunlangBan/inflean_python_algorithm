@@ -32,7 +32,7 @@ def count(len):
   for i in range(1,n):
     if line[i]-ep>=len:
       cnt+=1
-      cp=line[i]
+      ep=line[i]
   return cnt
 
 n, c = map(int, input().split())

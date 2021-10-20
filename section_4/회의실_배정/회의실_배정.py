@@ -19,3 +19,24 @@ for i in range(n):
     max_cnt = cnt
 
 print(max_cnt)
+
+######### SOLUTION ###########
+## 회의가 끝나는 시간을 기준으로 정렬해야함
+## 회의가 빨리 시작되는 것이 중요한게 아니라 회의가 빨리 끝나서 최대한 많은 회의를 할 수 있는 것이 중요함
+
+n = int(input())
+meeting = []
+
+for i in range(n):
+  s, e = map(int, input().split())
+  meeting.append((s,e))
+
+meeting.sort(key=lambda x:(x[1], x[0])). # 끝나는 시간을 기준으로 하여 정렬
+et = 0
+cnt = 0
+for s, e in meeting:
+  if s >= et:
+    et = e
+    cnt += 1
+
+print(cnt)

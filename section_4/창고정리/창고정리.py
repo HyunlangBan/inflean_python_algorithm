@@ -16,3 +16,16 @@ for _ in range(m):
   move(max_h, min_h)
 
 print(max(array) - min(array))
+
+############# SOLUTION ###############
+## 최대, 최소를 찾기 위해 매번 sorting을 하라.
+L = int(input())
+a = list(map(int, input().split()))
+m = int(input())
+a.sort()
+for _ in range(m):
+  a[0] += 1
+  a[L-1] -= 1
+  a.sort()
+  
+print(a[L-1] - a[0])

@@ -23,3 +23,4 @@ while array:
 
 print(cnt)
     
+## 1씩 차이나게 틀리는 답들은 뭐지....

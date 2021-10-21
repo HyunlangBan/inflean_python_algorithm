@@ -6,7 +6,7 @@ array.sort(reverse=True)
 cnt = 0
 while array:
   if len(array)==1:
-    array.pop()
+    array.pop()  # 굳이 pop할 필요는 없다.
     break
 
   max = array[0]
@@ -23,4 +23,30 @@ while array:
 
 print(cnt)
     
-## 1씩 차이나게 틀리는 답들은 뭐지....
+## 1씩 차이나게 틀리는 답들은 뭐지.... => len(array)==1인 경우 cnt 증가시키는걸 빼먹음
+
+################## SOLUTION ####################
+## 논리는 내가 푼 방식과 동일
+
+from collections import deque ## 
+
+# p.sort()
+p=deque(p) ##
+
+cnt = 0
+while p:
+  if len(p)==1:
+    cnt += 1
+    break
+  if p[0]+p[-1] > limit:
+    p.pop()
+    cnt+=1
+  else:
+#     p.pop(0)
+    p.popleft() ##
+    p.pop()
+    cnt += 1
+
+print(cnt)
+
+### list -> pop(0)일때 뒤의 index가 하나씩 이동해야 하므로 비효울적 -> deque를 이용하자(deque는 가르키는 idx 위치만 변경하는 방식)

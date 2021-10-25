@@ -35,9 +35,26 @@ while cnt <= m:
 for i in n:
   print(i, end='')
     
-############## 포기
+############## 포기. 문제풀이 아이디어를 못찾음
 
 ############## SOLUTION ################
 ## 앞 숫자가 자기보다 작으면 제거하고 들어감 -> stack(LIFO)
 ## 내림차순으로 쌓이게됨
 
+num, m = map(int, input().split())
+num = list(map(int, str(num)))
+stack = []
+
+for x in num:
+  # stack에 값이 있고, 삭제할 갯수가 남아있으며 마지막으로 들어간 숫자가 현재보다 작은 경우
+  while stack and m > 0 and stack[-1] < x:
+    stack.pop()
+    m -= 1
+  stack.append(x)
+  
+# m을 소진시키지 않고 다 돈경우 -> 뒤에 있는 숫자들을 지운다(내림차순이므로)
+if m != 0:
+  stack = stack[:-m]
+  
+res = ''.join(map(str, stack))
+print(res)

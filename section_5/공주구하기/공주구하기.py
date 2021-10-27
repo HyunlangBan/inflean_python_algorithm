@@ -9,3 +9,12 @@ while len(queue) > 1:
   queue.pop(0)
 
 print(queue[0])
+
+########## SOLUTION ###########
+## queue를 import해서 쓰기
+
+from collections import deque
+dq = list(range(1, n+1)) ## list
+dq = deque(dq)
+
+## pop(0) 대신 dq.popleft()

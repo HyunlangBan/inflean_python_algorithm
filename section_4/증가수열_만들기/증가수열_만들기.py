@@ -40,6 +40,7 @@ while prev:
 print()
 
 ############### SOLUTION ##################
+## pop을 쓰지 않고 idx를 변화시키는 방식을 선택
 
 lt = 0
 rt = n-1
@@ -48,7 +49,7 @@ last = 0
 res = ""
 tmp = []
 
-while lt <= rt:
+while lt <= rt: ###
   if a[lt] > last:
     tmp.append((a[lt], 'L'))
   if a[rt] > last:

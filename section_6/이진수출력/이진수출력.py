@@ -13,3 +13,13 @@ def d(number):
 d(n)
 res = ''.join(map(str, res))
 print(res)
+
+########### SOLUTION #############
+## 더 깔끔
+
+def DFS(x):
+  if x==0:
+    return
+  else:
+    DFS(x//2)
+    print(x%2, end = '')

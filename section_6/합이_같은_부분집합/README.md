@@ -21,3 +21,7 @@ N개의 원소로 구성된 자연수 집합이 주어지면, 이 집합을 두 
 
 ▣ 출력예제 1    
 YES
+
+
+### 풀이 참고
+![image](https://user-images.githubusercontent.com/45524783/139871377-ecd550f6-4ed8-4a08-aade-7bdb90b32047.png)

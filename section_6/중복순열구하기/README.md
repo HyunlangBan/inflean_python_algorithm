@@ -24,3 +24,6 @@
 3 2           
 3 3           
 9
+
+### 해설 참고
+![image](https://user-images.githubusercontent.com/45524783/140377733-3a920eca-249d-4a83-b684-2a7c601d9a6a.png)

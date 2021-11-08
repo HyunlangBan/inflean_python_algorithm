@@ -31,7 +31,7 @@ DFS(0, m)
 dfs DFS(L, sum):
   global res
   
-  if L > res:   ## Cut Edge
+  if L > res:   ## Cut Edge, 현재까지 나온 최소 개수보다 많으면 더 셀 필요가 없음
     return
   if sum > m:
     return

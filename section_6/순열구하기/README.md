@@ -21,3 +21,7 @@
 3 1      
 3 2      
 6
+
+
+### 풀이 참고
+![image](https://user-images.githubusercontent.com/45524783/140775376-e4703c63-c740-45de-ab1a-52b8aa47be7a.png)

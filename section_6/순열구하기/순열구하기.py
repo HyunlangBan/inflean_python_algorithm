@@ -16,3 +16,7 @@ def DFS(L, num):
     DFS(L+1, i)
 
 DFS(0, 0)
+
+
+########### SOLUTION ############
+## 중복을 확인하는 checklist를 만들어야함

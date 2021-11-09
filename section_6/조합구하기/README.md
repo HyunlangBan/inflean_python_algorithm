@@ -22,3 +22,7 @@
 3 4      
 6
 
+
+### 풀이 참고
+![image](https://user-images.githubusercontent.com/45524783/140960076-74ac730d-7183-4aae-8c61-e1d6440f4285.png)
+- D(level, start_number)

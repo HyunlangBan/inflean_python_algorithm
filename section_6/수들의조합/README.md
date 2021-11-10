@@ -19,3 +19,8 @@ N개의 정수가 주어지면 그 숫자들 중 K개를 뽑는 조합의 합이
 
 ▣ 출력예제 1     
 2
+
+### 풀이참고
+![image](https://user-images.githubusercontent.com/45524783/141141459-11965e7d-ea7c-40fd-a7ff-50950d4656f9.png)
+- idx 순차 증가
+- sum

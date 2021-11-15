@@ -16,7 +16,7 @@ def DFS(L, sum, tsum):
     if sum > result:
       result = sum
   else:
-    DFS(L+1, sum+a[L], tsum+a[L)  ## 부분집합에 포함
+    DFS(L+1, sum+a[L], tsum+a[L])  ## 부분집합에 포함
     DFS(L+1, sum, tsum+a[L])       ## 부분집합에 미포함
 
 c, n = map(int, input().split())

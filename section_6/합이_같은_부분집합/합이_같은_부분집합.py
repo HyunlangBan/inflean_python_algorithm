@@ -3,7 +3,7 @@
 
 def DFS(L, sum): # L: 인덱스 번호(Level)
   if sum > total//2:   ## sum을 누적하다가 절반보다 커져 버림
-                       ## sum == total//2는 n이 홀수일때는 성립되지 않음 
+                       ## sum == total//2는 total이 홀수일때는 성립되지 않음 
     return
   
   if L==n:

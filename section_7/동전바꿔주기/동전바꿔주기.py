@@ -2,6 +2,8 @@
 
 def DFS(L, sum):
   global cnt
+  if sum > T:     ## cut-edge
+    return
   if L==k:
     if sum==T:
       cnt += 1

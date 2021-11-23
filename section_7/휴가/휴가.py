@@ -32,10 +32,10 @@ def DFS(L, sum):
   if L==n+1:
     if sum > res:
       res = sum
-    else:
-      if L+T[L] <= n+1:   # 날짜에 잡힌 상담을 진행
-        DFS(L+T[L], sum+P[L])
-      DFS(L+1, sum)
+  else:
+    if L+T[L] <= n+1:   # 날짜에 잡힌 상담을 진행
+      DFS(L+T[L], sum+P[L])
+    DFS(L+1, sum)
 
 n = int(input())
 T = list()

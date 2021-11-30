@@ -28,3 +28,9 @@ YAAD
 YAN    
 YKD     
 6     
+
+## 풀이참고
+![image](https://user-images.githubusercontent.com/45524783/144074710-3de2bcbe-d213-4be1-969e-7ff2877340a4.png)
+![image](https://user-images.githubusercontent.com/45524783/144074922-05219493-bf12-446a-9a84-2d206d9ba90b.png)
+
+- 두자리 숫자가 걸리면 L이 2씩 증가한다.

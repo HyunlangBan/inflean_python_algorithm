@@ -26,3 +26,7 @@
 
 ▣ 출력예제 1         
 379
+
+### 풀이참고
+- 마름모로 탐색        
+![image](https://user-images.githubusercontent.com/45524783/144258214-0ff5e90e-d978-4ede-a12e-0c28667e9e79.png)

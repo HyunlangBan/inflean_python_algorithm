@@ -36,6 +36,8 @@ else:
 
   
 ########### SOLUTION ############
+## 더깔끔
+
 from collections import deque
 
 dx = [-1, 0, 1, 0]

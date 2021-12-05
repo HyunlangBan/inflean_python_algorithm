@@ -36,7 +36,7 @@ else:
 
   
 ########### SOLUTION ############
-## 더깔끔
+## 더깔끔 - visited, cnt를 한번에 해결
 
 from collections import deque
 

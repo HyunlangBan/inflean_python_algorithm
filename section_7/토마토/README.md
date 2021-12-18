@@ -27,3 +27,8 @@
 
 ▣ 출력예제 1     
 4
+
+### 풀이참고
+![image](https://user-images.githubusercontent.com/45524783/146646699-6b8497bc-c8ef-4f60-80b8-fe233534dddf.png)
+
+- dis: 익는데 걸리는 시간 기록(부모 날짜 + 1)        

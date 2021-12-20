@@ -1,4 +1,5 @@
-## Divide Sort 
+## Divide Sort - Divide and Conquer
+- 전위순회
 - lt와 rt의 영역을 절반으로 나눈다(`(lt+rt)//2`) -> (lt, mid), (mid+1, rt)
 - 나눈 두 영역(각각 정렬되어 있음)을 새로운 리스트에 오름차순으로 합친다.(tmp)
 - 위에서 정렬한 부분을 원래의 리스트에 적용해준다.    

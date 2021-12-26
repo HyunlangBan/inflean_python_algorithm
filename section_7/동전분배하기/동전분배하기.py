@@ -7,7 +7,7 @@ def DFS(L):
       tmp = set()
       for x in money:
         tmp.add(x)
-      if len(tmp)==3:
+      if len(tmp)==3:        ## 단 세 사람의 총액은 서로 달라야 합니다.
         res=diff
     
   else:

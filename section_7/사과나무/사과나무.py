@@ -28,6 +28,7 @@ DFS(0,0)
 
 ############ SOLUTION #############
 ## BFS
+## L로 범위를 한정해
 
 from collections import deque
 dx = [-1, 0, 1, 0]

@@ -25,7 +25,7 @@ print(t[-1][-1])
 # 하지만 50, 100 이런 깊이면 다이나믹이라 생각하면 됩니다.
 
 
-############ SOLUTION #############
+############ SOLUTION - bottom up #############
 n = int(input())
 arr = [list(map(int, input().split())) for _ in range(n)]
 dy = [[0]*n for _ in range(n)]
@@ -39,3 +39,26 @@ for i in range(1, n):
   for j in range(1, n):
     dy[i][j] = min(dy[i-1][j], dy[i][j-1])+arr[i][j]
 print(dy[n-1][n-1])
+
+
+
+############ SOLUTION 2 - top down #############
+n = int(input())
+arr = [list(map(int, input().split())) for _ in range(n)]
+dy = [[0]*n for _ in range(n)]     ## memoization
+
+def DFS(x, y):
+  if dy[x][y] > 0:
+    return dy[x][y]
+  if x==0 and y==0:
+    return arr[0][0]
+  else:
+    if y==0:
+      dy[x][y] = DFS(x-1, y)+arr[x][y]
+    elif x==0:
+      dy[x][y] = DFS(x, y-1)+arr[x][y]
+    else:
+      dy[x][y] = min(DFS(x-1, y), DFS(x, y-1))+arr[x][y]
+    return dy[x][y]
+    
+print(DFS(n-1, n-1))

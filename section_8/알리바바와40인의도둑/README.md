@@ -30,8 +30,15 @@
 ▣ 출력예제 1    
 25
 
-### 풀이참고
+## 풀이참고
+### Bottom up
 ![image](https://user-images.githubusercontent.com/45524783/150161375-9610846a-5211-40a7-adee-bb3721b9d960.png)
 
 - dy의 0행과 0열에는 올 수 있는 경우가 한가지 경로 밖에 없으므로 마지막 인덱스까지 더해나가는 것으로 초기화가 가능하다.
 - dy에서 초기화를 완료했으므로, (1,1)부터 시작하여 윗부분과 왼쪽 부분의 값을 비교하여 최소의 합을 구한다.
+
+## Top down - memoization
+![image](https://user-images.githubusercontent.com/45524783/150164892-8bdfdf9d-ede4-4566-bfb0-dcf0613c6636.png)
+
+- `D(1, 1)`과 같이 중복되는 값이 생기므로 저장해두었다가 사용
+

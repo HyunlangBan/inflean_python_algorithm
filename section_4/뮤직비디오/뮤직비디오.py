@@ -31,6 +31,8 @@ print(res)
 ########### SOLUTION ############
 
 maxx = max(music)
+lt = 1
+rt = sum(Music)
 
 def count(capacity):
   cnt=1

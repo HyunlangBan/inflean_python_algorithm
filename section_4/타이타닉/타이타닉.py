@@ -27,10 +27,11 @@ print(cnt)
 
 ################## SOLUTION ####################
 ## 논리는 내가 푼 방식과 동일
+# 가장 무거운 사람과 가장 가벼운 사람을 찍지어서 무게를 확인해보고 기준을 넘으면 무거운 사람만 타고간다.
 
 from collections import deque ## 
 
-# p.sort()
+p.sort()
 p=deque(p) ##
 
 cnt = 0

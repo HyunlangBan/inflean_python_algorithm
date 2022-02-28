@@ -29,3 +29,5 @@ YES
 
 ### 풀이 참고
 ![image](https://user-images.githubusercontent.com/45524783/139871377-ecd550f6-4ed8-4a08-aade-7bdb90b32047.png)
+- D(idx, sum)
+  - a의 idx를 부분집합에 포함한다(왼)/안한다(오)

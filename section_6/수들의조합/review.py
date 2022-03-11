@@ -16,7 +16,7 @@ def DFS(L, idx, sum):
   for i in range(idx, n):
     if ch[i]==0:
       ch[i]=1
-      DFS(L+1, i, sum+a[i])
+      DFS(L+1, i, sum+a[i])  # i+1을 넣어주는게 맞다.
       ch[i]=0
 
 DFS(0, 0, 0)

@@ -16,7 +16,7 @@ DFS(0, 0, 0)
 print(cnt)
 
 ## 라이브러리 사용
-from itertools as it
+import itertools as it
 
 for x in it.combinations(a, k):
   if sum(x)%m == 0:

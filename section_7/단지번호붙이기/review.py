@@ -1,4 +1,7 @@
-# Try 1 - ❌
+# Try 1 - 🔺
+## 어이없는 걸로 틀림 !!!!!! ㅠㅠㅠ
+## 답지에서는 ch말고 방문한 곳을 0으로 바꾸어서 했는데 그게 더 깔끔하고 좋은 것 같다.
+
 from collections import deque
 
 n = int(input())
@@ -24,7 +27,7 @@ for i in range(n):
       while q:
         
         cx, cy = q.popleft()
-        for i in range(4):
+        for i in range(4):       ##### 위에서 i를 쓰고 있는데 i로 썼다....다른 변수를 이용하자
           xx = cx + dx[i]
           yy = cy + dy[i]
           if 0<=xx<n and 0<=yy<n and ch[xx][yy]==0 and a[xx][yy]==1:

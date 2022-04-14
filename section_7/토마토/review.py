@@ -1,5 +1,6 @@
 # Try 1 - 🔺
 ## 풀이 참고 보고 풀었다. 그리고 다 익지 않은 경우 처리에서 끼워맞춘 부분이 있다;
+## 풀이를 보면 다 익지 않은 경우를 위해서 flag를 두고 입력으로 주는 값에서 0인 부분의 존재로 flag를 판단한다.
 
 n, m = map(int, input().split())
 t = [ list(map(int, input().split())) for _ in range(m) ]

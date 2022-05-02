@@ -14,3 +14,32 @@ for i in range(n):
 
 res = list(res)
 print(res[k-1])
+
+
+## Try 2 - ✅
+n, k = map(int, input().split())
+a = list(map(int, input().split()))
+
+# a에서 3개를 뽑는다.
+ch = [0]*n
+res = [0]*3
+
+total = set()
+
+def DFS(L, idx):
+  if L==3:
+    total.add(sum(res))
+    return
+
+  for i in range(idx, len(a)):
+    if ch[i] == 0:
+      res[L] = a[i]
+      ch[i] = 1
+      DFS(L+1, i+1)
+      ch[i] = 0
+
+DFS(0, 0)
+total = list(total)
+total.sort(reverse=True)
+# print(total)
+print(total[k-1])

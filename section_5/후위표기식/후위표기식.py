@@ -55,7 +55,7 @@ for x in a:
     elif x == ')':
       while stack and stack[-1] != '(':
         res += stack.pop()
-      stack.pop()
+      stack.pop().  # '(' 제거
       
 while stack:
   res += stack.pop()

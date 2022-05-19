@@ -21,11 +21,11 @@ def DFS(idx, sum):
 
 DFS(0, 0)
 
-# Try 2 - ✅
+# Try 2 - 🔺
 c, n = map(int, input().split())
 a = [int(input()) for _ in range(n)]
 
-### 가장 무거운 부분 집합을 구
+### 가장 무거운 부분 집합을 구하기 
 res = 0
 total = sum(a)
 
@@ -34,6 +34,8 @@ def DFS(L, s):
   
   # cut-edge
   if s + (total-s) <= res:
+    ## 단순히 total - s로 하면 안됨! 선택을 안하기로 선택한 애들이 포함이 안되어 있으므로
+    ## 답안 참조할것    
     return
   if s > c:
     return

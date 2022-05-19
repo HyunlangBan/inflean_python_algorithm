@@ -4,8 +4,6 @@
 
 초급 대상인 알고리즘 강의를 빠르게 풀면서 문제 감을 익혀보겠음  
 
-~~12월 초까지 완주 목표 🌟~~
-
 ---
 
 - [section2](https://github.com/HyunlangBan/inflean_python_algorithm/tree/main/section_2). 코드 구현력 기르기
